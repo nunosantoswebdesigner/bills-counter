@@ -1,0 +1,338 @@
+/* General Blueprint Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* font-face-icons */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?vrvizk');
+    src:  url('../fonts/icomoon.eot?vrvizk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vrvizk') format('truetype'),
+    url('../fonts/icomoon.woff?vrvizk') format('woff'),
+    url('../fonts/icomoon.svg?vrvizk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* icomoon-icons */
+.icon-javascript:before {
+content: "\e900";
+}
+.icon-uniE602:before {
+content: "\e602";
+}
+.icon-uniE000:before {
+content: "\e000";
+}
+.icon-email:before {
+content: "\e901";
+}
+.icon-css3:before {
+content: "\e902";
+}
+.icon-w3c:before {
+content: "\e902";
+}
+.icon-html-five:before {
+content: "\e903";
+}
+.icon-w3c1:before {
+content: "\e903";
+}
+.icon-brand:before {
+content: "\e904";
+}
+.icon-octacat:before {
+content: "\e904";
+}
+.icon-social:before {
+content: "\e904";
+}
+.icon-brand1:before {
+content: "\e905";
+}
+.icon-social1:before {
+content: "\e905";
+}
+.icon-paperplane:before {
+content: "\e906";
+}
+.icon-send:before {
+content: "\e906";
+}
+.icon-flight:before {
+content: "\e906";
+}
+.icon-email1:before {
+content: "\e906";
+}
+.icon-email2:before {
+content: "\e907";
+}
+.icon-letter:before {
+content: "\e907";
+}
+.icon-envelope:before {
+content: "\e907";
+}
+.icon-contact:before {
+content: "\e907";
+}
+
+/* ns-icons */
+.ns-icon:after {
+    font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-align: center;
+	color: #5C5EDC;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.ns-icon-about:after {
+    content: "\e003";
+}
+.ns-icon-prev:after {
+    content: "\e004";
+}
+.ns-icon-next:after {
+    content: "\e000";
+}
+.ns-icon-instagram:after {
+    content: "\e905";
+}
+.ns-icon-github:after {
+    content: "\e904";
+}
+.ns-icon-mail:after {
+    content: "\e907";
+}
+
+.ns-icon-about {
+    font-size: 1.5em;
+}
+
+/* Resets */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body,
+html {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* Helper classes */
+.cf:before,
+.cf:after {
+	content: ' ';
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.hidden {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Main styles */
+body {
+	font-family: "Avenir", 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	color: #CECECE;
+    background-image: linear-gradient(to bottom, #222125, #302759, #3c298f, #4c23c7, #6400ff) !important;
+    overflow: hidden !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #5C5EDC;
+	outline: none;
+}
+
+a:focus {
+	color: #ddd;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/* Blueprint header */
+.bp-header {
+	margin: 0 auto;
+	padding: 3em 3em 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+}
+
+.bp-header h1 {
+	font-size: 2.125em;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 0 0 .6em 0;
+}
+
+.bp-header h1 > span {
+	font-size: 50%;
+	display: block;
+	color: #4D4D5A;
+} 
+
+.bp-header > span {
+	width: 100%;
+	font-weight: 700;
+	font-size: 0.85em;
+	color: #5C5EDC;
+	position: relative;
+	z-index: 100;
+	display: block;
+	padding: 0 0 .6em .1em;
+	letter-spacing: .5em;
+	text-transform: uppercase;
+}
+
+.bp-header > span span:after {
+	font-size: 50%;
+	font-size: 75%;
+	position: relative;
+	top: -8px;
+	left: -12px;
+	width: 30px;
+	height: 30px;
+	cursor: help;
+}
+
+.bp-header > span span:hover:before {
+	content: attr(data-content);
+	font-size: 110%;
+	font-weight: 700;
+	line-height: 1.2;
+	max-width: 500px;
+	position: absolute;
+	left: auto;
+	margin-left: 4px;
+	padding: .8em 1em;
+	text-align: left;
+	text-indent: 0;
+	letter-spacing: 0;
+	text-transform: none;
+	color: #fff;
+	background: #5C5EDC;
+}
+
+.bp-header nav {
+	position: relative;
+	z-index: 100;
+	margin: -2em 0 0 auto;
+}
+
+.bp-header nav a {
+	position: relative;
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	margin: 0 .1em;
+	text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.bp-header nav a > span {
+	display: none;
+}
+
+.bp-header nav a:hover:before {
+	content: attr(data-info);
+	color: #595A5F;
+	font-weight: bold;
+	font-size: 0.85em;
+	position: absolute;
+	top: 120%;
+	right: 0;
+	width: 600%;
+	text-align: right;
+	pointer-events: none;
+}
+
+.bp-header nav a:hover {
+	background: #5C5EDC;
+}
+
+.bp-icon:after {
+	font-family: 'bpicons';
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
+	text-transform: none;
+	color: #5C5EDC;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+.bp-header nav .bp-icon:after {
+	line-height: 2.4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: 0;
+}
+
+.bp-header nav a:hover:after {
+	color: #fff;
+}
+
+
+@media screen and (max-width: 40em) {
+	.bp-header {
+		text-align: center;
+	}
+	.bp-header > span {
+		text-indent: 30px;
+	}
+	.bp-header > span span:hover:before {
+		right: 0px;
+	}
+	.bp-header h1 {
+		font-size: 1.8em;
+		width: 100%;
+	}
+	.bp-header nav {
+		margin: 0;
+		width: 100%;
+	}
+}

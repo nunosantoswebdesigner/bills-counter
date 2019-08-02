@@ -1,0 +1,209 @@
+.stepPayCash_html {
+  width: 100%;
+  height: 330px;
+  margin-left: 30px;
+}
+.stepPayCash_html .obj_bills {
+  width: 100%;
+  height: 380px;
+  margin: 0;
+  padding: 0;
+}
+.stepPayCash_html .obj_bills .obj_bill {
+  display: inline-block;
+  width: 133px;
+  height: 320px;
+  margin: 3px;
+  position: relative;
+  /* Limit 0 */
+  /* Limit 1 */
+  /* Limit 2 */
+  /* Limit 3 */
+  /* Limit 4 */
+  /* Limit 5 */
+  /* Limit 6 */
+  /* Last bill inserted */
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_counter {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 5px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 300;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_counter:after {
+  content: ' X';
+  font-size: 16px;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_value {
+  position: absolute;
+  top: 40px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-align: center;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_value .main_unit {
+  font-size: 10px;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_bill,
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_under,
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_base {
+  display: block;
+  width: 85px;
+  height: 205px;
+  background-size: 100% 100%;
+  margin-top: 60px;
+  margin-left: 25px;
+  position: absolute;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_under,
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_bill {
+  box-shadow: 0 10px 7px -7px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_bill {
+  box-shadow: none;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_500 .obj_bill_base,
+.stepPayCash_html .obj_bills .obj_bill.type_500 .obj_bill_bill,
+.stepPayCash_html .obj_bills .obj_bill.type_500 .obj_bill_under {
+  background-image: url('../images/bill_500.png');
+}
+.stepPayCash_html .obj_bills .obj_bill.type_1000 .obj_bill_base,
+.stepPayCash_html .obj_bills .obj_bill.type_1000 .obj_bill_bill,
+.stepPayCash_html .obj_bills .obj_bill.type_1000 .obj_bill_under {
+  background-image: url('../images/bill_1000.png');
+}
+.stepPayCash_html .obj_bills .obj_bill.type_2000 .obj_bill_base,
+.stepPayCash_html .obj_bills .obj_bill.type_2000 .obj_bill_bill,
+.stepPayCash_html .obj_bills .obj_bill.type_2000 .obj_bill_under {
+  background-image: url('../images/bill_2000.png');
+}
+.stepPayCash_html .obj_bills .obj_bill.type_5000 .obj_bill_base,
+.stepPayCash_html .obj_bills .obj_bill.type_5000 .obj_bill_bill,
+.stepPayCash_html .obj_bills .obj_bill.type_5000 .obj_bill_under {
+  background-image: url('../images/bill_5000.png');
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_base {
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_0 {
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_0 .obj_bill_base {
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_1 .obj_bill_under {
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_1 .obj_bill_under.type_1 {
+  top: 2px;
+  left: 1px;
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_1 .obj_bill_base {
+  opacity: 0.4;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_2 .obj_bill_under.type_1 {
+  top: 2px;
+  left: 1px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_3 .obj_bill_under.type_1 {
+  top: 4px;
+  left: 2px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_3 .obj_bill_under.type_2 {
+  top: 2px;
+  left: 1px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_4 .obj_bill_under.type_1 {
+  top: 6px;
+  left: 3px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_4 .obj_bill_under.type_2 {
+  top: 4px;
+  left: 2px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_4 .obj_bill_under.type_3 {
+  top: 2px;
+  left: 1px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_5 .obj_bill_under.type_1 {
+  top: 8px;
+  left: 4px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_5 .obj_bill_under.type_2 {
+  top: 6px;
+  left: 3px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_5 .obj_bill_under.type_3 {
+  top: 4px;
+  left: 2px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_5 .obj_bill_under.type_4 {
+  top: 2px;
+  left: 1px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_under.type_1 {
+  top: 8px;
+  left: 4px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_under.type_2 {
+  top: 6px;
+  left: 3px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_under.type_3 {
+  top: 4px;
+  left: 2px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_under.type_4 {
+  top: 2px;
+  left: 1px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_limit_6 .obj_bill_under.type_5 {
+  top: 0px;
+  left: 0px;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_last .obj_bill_bill {
+  animation-name: obj_bill_animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_last .obj_bill_under {
+  animation-name: obj_under_animation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+.stepPayCash_html .obj_bills .obj_bill.type_last.type_limit_6 .obj_bill_under {
+  animation: none;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_total {
+  width: 100%;
+  position: absolute;
+  top: 275px;
+  font-size: 14px;
+  color: #00a4e2;
+  text-align: center;
+  font-weight: 550;
+}
+.stepPayCash_html .obj_bills .obj_bill .obj_bill_total .main_unit {
+  font-size: 14px;
+}
+.obj_bills_total_label {
+  width: 86.3%;
+  display: block;
+  height: 80px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 0 35px;
+  padding: 10px 40px 0px 0px;
+  background: #f7f7f7;
+  color: #B8B5B5;
+  box-sizing: border-box;
+}
+.obj_bills_total_label .obj_bills_total_amount {
+  display: block;
+}

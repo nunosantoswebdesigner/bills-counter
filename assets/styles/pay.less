@@ -1,0 +1,217 @@
+
+    // BILLS
+    .stepPayCash_html {
+        width: 100%;
+        height: 330px;
+        margin-left: 30px;
+    
+        .obj_bills {
+            width: 100%;
+            height: 380px;
+            margin: 0;
+            padding: 0;
+        
+            .obj_bill {
+                display: inline-block;
+                width: 133px;
+                height: 320px;            
+                margin: 3px;
+                position: relative;
+    
+                .obj_bill_counter {
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    font-size: 26px;
+                    text-align: center;
+                    font-weight: 300;
+                    &:after {
+                        content: ' X';
+                        font-size: 16px;
+                        //letter-spacing: -2px;
+                    }
+                }
+    
+                .obj_bill_value {
+                    position: absolute;
+                    top: 40px;
+                    font-size: 10px;
+                    letter-spacing: 0.5px;
+                    width: 100%;
+                    text-align: center;
+                    .main_unit {
+                        font-size: 10px;
+                    }
+                }
+                
+                .obj_bill_bill,
+                .obj_bill_under,
+                .obj_bill_base {
+                    display: block;
+                    width: 85px;
+                    height: 205px;
+                    background-size: 100% 100%;
+                    margin-top: 60px;
+                    margin-left: 25px;
+                    position: absolute;
+                }
+            
+                .obj_bill_under, .obj_bill_bill {
+                    box-shadow: 0 10px 7px -7px rgba(0,0,0,0.12), 0 0 4px rgba(0,0,0,0.1);
+                }
+                &.type_limit_6 {
+                    .obj_bill_bill {
+                        box-shadow: none;
+                    }
+                }
+
+                
+                &.type_500 .obj_bill_base,
+                &.type_500 .obj_bill_bill , 
+                &.type_500 .obj_bill_under{
+                    background-image: url('../images/bill_500.png');
+                }
+    
+                &.type_1000 .obj_bill_base, 
+                &.type_1000 .obj_bill_bill, 
+                &.type_1000 .obj_bill_under {
+                    background-image: url('../images/bill_1000.png');
+                }
+                
+                &.type_2000 .obj_bill_base, 
+                &.type_2000 .obj_bill_bill, 
+                &.type_2000 .obj_bill_under {
+                    background-image: url('../images/bill_2000.png');
+                }
+                
+                &.type_5000 .obj_bill_base, 
+                &.type_5000 .obj_bill_bill, 
+                &.type_5000 .obj_bill_under {
+                    background-image: url('../images/bill_5000.png');
+                }
+    
+                .obj_bill_base {
+                    opacity: 0.4;
+                }
+    
+                /* Limit 0 */
+                &.type_limit_0 {
+                    opacity: 0.4;
+    
+                    .obj_bill_base {
+                        opacity: 0.4;
+                    }
+                }
+    
+                /* Limit 1 */
+                &.type_limit_1 {
+                    .obj_bill_under {
+                        opacity: 0.4;
+                        &.type_1 {top:2px;left:1px;opacity: 0.4;}
+                    }
+                    .obj_bill_base {
+                        opacity: 0.4;
+                    }
+                    
+                }
+                    
+                /* Limit 2 */
+                &.type_limit_2 {
+                    .obj_bill_under {
+                        &.type_1 {top:2px;left:1px;}
+                    }
+                } 
+                
+                /* Limit 3 */
+                &.type_limit_3 {
+                    .obj_bill_under {
+                        &.type_1 {top:4px;left:2px;}
+                        &.type_2 {top:2px;left:1px;}
+                    }
+                }
+                
+                /* Limit 4 */
+                &.type_limit_4 {
+                    .obj_bill_under {
+                        &.type_1 {top:6px;left:3px;}
+                        &.type_2 {top:4px;left:2px;}
+                        &.type_3 {top:2px;left:1px;}
+                    }
+                }
+                
+                /* Limit 5 */
+                &.type_limit_5 {
+                    .obj_bill_under {
+                        &.type_1 {top:8px;left:4px;}
+                        &.type_2 {top:6px;left:3px;}
+                        &.type_3 {top:4px;left:2px;}
+                        &.type_4 {top:2px;left:1px;}
+                    }
+                }
+                
+                /* Limit 6 */
+                &.type_limit_6 {
+                    .obj_bill_under {
+                        &.type_1 {top:8px;left:4px;}
+                        &.type_2 {top:6px;left:3px;}
+                        &.type_3 {top:4px;left:2px;}
+                        &.type_4 {top:2px;left:1px;}
+                        &.type_5 {top:0px;left:0px;} 
+                    }
+                }
+                
+                /* Last bill inserted */
+                &.type_last {
+                    .obj_bill_bill {
+                        animation-name: obj_bill_animation;
+                        animation-duration: 0.5s;	
+                        animation-timing-function: ease-out;				
+                    }
+                    .obj_bill_under {
+                        animation-name: obj_under_animation;
+                        animation-duration: 0.5s;	
+                        animation-timing-function: linear;				
+                    }
+                    &.type_limit_6 {
+                        .obj_bill_under {
+                            animation: none;
+                        }
+                    }
+                }
+    
+                .obj_bill_total {
+                    width: 100%;
+                    position: absolute;
+                    text-align: center;
+                    top: 275px;
+                    font-size: 14px;
+                    color: #00a4e2;
+                    text-align: center;
+                    font-weight: 550;
+                    
+                    .main_unit {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .obj_bills_total_label {
+        width: 86.3%;
+        display: block;
+        height: 80px;
+        text-align: right;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0 0 35px;
+        padding: 10px 40px 0px 0px;
+        background: #f7f7f7;
+        color: #B8B5B5;
+        box-sizing: border-box;
+        
+        .obj_bills_total_amount {
+            display: block;
+            //text-align: right;
+        }
+    }
