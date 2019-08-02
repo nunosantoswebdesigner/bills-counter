@@ -26,8 +26,8 @@ Todo:
 
 
 Links do Projecto:      
-[Demo](https://nunosantoswebdesigner.github.io/bills)    
-[Repo](https://github.com/nunosantoswebdesigner/bills)    
+[Demo](https://nunosantoswebdesigner.github.io/bills-counter)    
+[Repo](https://github.com/nunosantoswebdesigner/bills-counter)    
 ![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/bills_2.png)  
 ![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/bills_8.png)  
   
